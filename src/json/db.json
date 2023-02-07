@@ -1,0 +1,139 @@
+{
+
+  "mainJson" : [
+    {
+    "cateList" : "cateli1",
+    "cateDiv" : [ "cateYellow", "cateBtn1", "animate__bounceInDown" ],
+    "buttonTitle" : "About",
+    "href" : "#none"
+    },
+    {
+      "cateList" : "cateli2",
+      "cateDiv" : [ "cateGreen", "cateBtn2", "animate__bounceInDown" ],
+      "buttonTitle" : "Skills",
+      "href" : "#none"
+    },
+    {
+      "cateList" : "cateli3",
+      "cateDiv" : [ "cateYellow", "cateBtn3", "animate__bounceInDown" ],
+      "buttonTitle" : "Portfolio",
+      "href" : "#none"
+    },
+    {
+      "cateList" : "cateli4",
+      "cateDiv" : [ "cateGreen", "cateBtn4", "animate__bounceInDown" ],
+      "buttonTitle" : "Keyword",
+      "href" : "#none"
+    },
+    {
+      "cateList" : "cateli5",
+      "cateDiv" : [ "cateYellow", "cateBtn5", "animate__animated", "animate__bounceInDown" ],
+      "buttonTitle" : "Contact",
+      "href" : "#none"
+    }
+  ],
+  "aboutJson" : [{
+    
+    }],
+  "skillJson" : [],
+  "ptfJson1" : [
+    {
+      "ptfImgcls" : ["ptfImg", "hover1"],
+      "pftTextboxcls" : ["ptfText", "gr", "hover1"],
+      "ptfImg" : "mustad.png",
+      "title" : "BOOTSTRAP",
+      "sub1" : "사이트컨셉",
+      "sub2" : "제작기간",
+      "sub3" : "solo"
+    },
+    {
+      "ptfImgcls" : ["ptfImg", "hover2"],
+      "pftTextboxcls" : ["ptfText", "gr", "hover2"],
+      "ptfImg" : "notion.png",
+      "title" : "",
+      "sub1" : "사이트 제작 소통",
+      "sub2" : "",
+      "sub3" : ""
+    }],
+    "ptfJson2" : [
+      {
+        "ptfImgcls" : ["ptfImg", "hover3"],
+        "pftTextboxcls" : ["ptfText", "ye", "hover3"],
+        "ptfImg" : "yougomai.png",
+        "title" : "EC",
+        "sub1" : "컨셉",
+        "sub2" : "제작기간",
+        "sub3" : "혼자"
+      },
+      {
+        "ptfImgcls" : ["ptfImg", "hover4"],
+        "pftTextboxcls" : ["ptfText", "gr", "hover4"],
+        "ptfImg" : "guide.png",
+        "title" : "고도몰 작업내용",
+        "sub1" : "ppt를 통한 쉬운 유지보수",
+        "sub2" : "",
+        "sub3" : ""
+      }],
+  "keywordJson" : [
+    {
+    "keyword" : "Communicative",
+    "keyCls" : "mockup1",
+    "spancls" : "txt1",
+    "piccls" : "picArea"
+    },
+    {
+      "keyword" : "Open-Minded",
+      "keyCls" : "mockup2",
+      "spancls" : "txt2",
+      "piccls" : "picArea"
+    },
+    {
+      "keyword" : "TeamWork",
+      "keyCls" : "mockup3",
+      "spancls" : "txt3",
+      "piccls" : "picArea"
+    },
+    {
+      "keyword" : "Challenging",
+      "keyCls" : "mockup4",
+      "spancls" : "txt4",
+      "piccls" : "picArea"
+    },
+    {
+      "keyword" : "Warm-Hearted",
+      "keyCls" : "mockup5",
+      "spancls" : "txt5",
+      "piccls" : "picArea"
+    }
+  ],
+  "contactJson" : [{
+    "sns" : "Kakao",
+    "href" : "",
+    "tar" : "_blank"
+    },
+    {
+    "sns" : "Email",
+    "href" : "",
+    "tar" : "_blank"
+    },
+    {
+    "sns" : "Git",
+    "href" : "",
+    "tar" : "_blank"
+    },
+    {
+    "sns" : "Notion",
+    "href" : "",
+    "tar" : "_blank"
+    },
+    {
+    "sns" : "Phone",
+    "href" : "",
+    "tar" : "_blank"
+    },
+    {
+    "sns" : "경기도 성남시 / 용인시"
+    }
+  ]
+
+}
