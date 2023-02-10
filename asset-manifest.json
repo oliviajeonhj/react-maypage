@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-maypage/static/css/main.b391207a.css",
+    "main.js": "/react-maypage/static/js/main.2e398a79.js",
+    "static/js/787.5a49acc3.chunk.js": "/react-maypage/static/js/787.5a49acc3.chunk.js",
+    "static/media/about3.png": "/react-maypage/static/media/about3.bd796fc69c29c5ac753b.png",
+    "static/media/ikamper.png": "/react-maypage/static/media/ikamper.98767768a0c1d1513c50.png",
+    "static/media/yougomai.png": "/react-maypage/static/media/yougomai.d3df282eae09725b2248.png",
+    "static/media/main2.png": "/react-maypage/static/media/main2.069651a37ae55acb3915.png",
+    "static/media/mustad.png": "/react-maypage/static/media/mustad.0b6433628a3103bcdc80.png",
+    "static/media/ref1.png": "/react-maypage/static/media/ref1.2bdfbaa5707a93f18b41.png",
+    "static/media/guide.png": "/react-maypage/static/media/guide.81d9ab5890df7abfba93.png",
+    "static/media/figma.png": "/react-maypage/static/media/figma.6874d818bf0d2ae8e649.png",
+    "static/media/notion.png": "/react-maypage/static/media/notion.48759fc4ca42c2ce0271.png",
+    "static/media/main1.png": "/react-maypage/static/media/main1.201b2d7e79935bead02d.png",
+    "index.html": "/react-maypage/index.html",
+    "main.b391207a.css.map": "/react-maypage/static/css/main.b391207a.css.map",
+    "main.2e398a79.js.map": "/react-maypage/static/js/main.2e398a79.js.map",
+    "787.5a49acc3.chunk.js.map": "/react-maypage/static/js/787.5a49acc3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b391207a.css",
+    "static/js/main.2e398a79.js"
+  ]
+}
