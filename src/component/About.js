@@ -4,7 +4,7 @@ import ref1 from '../img/about/ref1.png'
 
 function About(props) {
   return (
-    <div id="about">
+    <div id="about" className='abs'>
       <div className="aboutText flexCenter">
         <span>Better Together</span>
       </div>

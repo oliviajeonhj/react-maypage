@@ -9,7 +9,7 @@ import ptfDB from "../json/db.json"
 
 function Ptf(props) {
   return (
-    <div id="portfolio">
+    <div id="portfolio" className=''>
       <div className="d-flex">
         <div className="pftBox Box1">
           <strong>Portfolio</strong>

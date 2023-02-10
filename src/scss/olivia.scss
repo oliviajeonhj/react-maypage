@@ -60,6 +60,12 @@ a:hover { text-decoration: none; color: var(--color-black); }
 .mt-400{ margin-top: 400px !important; }
 .mt-500{ margin-top: 500px !important; }
 
+
+.zup{ z-index: 10000;}
+.top-0{ top:0;}
+.left-0{ left: 0;}
+.right-0{ right: 0;}
+.bottom-0{ bottom: 0;}
 body{
   overflow-x: hidden;
   overflow-y: auto;
@@ -91,6 +97,11 @@ body{
     max-width: 990px;
   }
 }
+@media(max-width:900px){
+  .hjContainer{
+    max-width: 900px;
+  }
+}
 @media(max-width:768px){
   .hjContainer{
     max-width: 768px;
@@ -106,16 +117,12 @@ body{
     max-width: 540px;
   }
 }
-@media(max-width:360px){
+@media(max-width:414px){
   .hjContainer{
-    max-width: 360px;
+    max-width: 414px;
   }
 }
-@media(max-width:320px){
-  .hjContainer{
-    max-width: 320px;
-  }
-}
+
 
 #main, #about, #skills, #keyword, #portfolio, #mainBefore, #contactBox{
   width: 100vw; height: 100vh;
@@ -163,17 +170,19 @@ body{
 .cateUl {
   padding-top: 100px;
   padding-left: 450px;
+  transition: 0.5s;
 }
-.cateUl li{
-  width: 300px; height: 90px;
-  padding: 65px 0;
-  z-index: 10000;
-
-  a:hover{
+.cateGreen:hover,
+.cateYellow:hover{
     background-color: var(--color-darkGreen);
     border-radius: 50px 50px 50px 50px;
     color: var(--color-highlightYellow);
   }
+
+
+.cateli0{ position: fixed; left:0; bottom:0}
+.cateUl li:not(.cateli0){
+  margin-bottom: 30px;
 }
 .cateli1{
   transform: rotate(2deg);
@@ -209,7 +218,7 @@ body{
 }
 .cateGreen{
   background-color: var(--color-lightGreen);
-  a{
+  div{
     width: 300px; height: 90px;
     display: flex;
     flex-direction: column;
@@ -272,6 +281,61 @@ body{
 
 .mainimg{
   transform: translate(40px, 150px);
+}
+
+
+/*스와이퍼버튼 튜닝*/
+.clickBtn .cateUl {
+  padding: 0 !important;
+
+  outline : none !important;
+
+}
+.cateUl li:not(.cateli0){
+  margin-bottom: 0 !important;
+}
+.clickBtn .cateUl li{
+  transform: rotate(0) translate(0 , 0) !important;
+  
+}
+.clickBtn .cateUl li div{
+   width:30px !important; height:15px !important;
+   border-radius: 30px 30px 30px 30px !important;
+   font-size: 0;
+   line-height: 0;
+}
+
+.clickBtn .cateUl .cateli0 div{
+    background-color: red !important;
+    width:50px !important; height:30px !important;
+    border-radius: 30px 30px 30px 30px !important;
+    font-size: 0;
+    line-height: 0;
+}
+
+.cateli.btn{
+  border: none;
+  line-height: 0;
+}
+
+@media(max-width:414px){
+  .cateUl {
+    padding: 0px;
+    margin-top: 80px;
+    margin-left: 50px;
+  }
+  .cateUl li:not(.cateli0) div{
+    width: 150px; height: 60px;
+    padding: 0;
+  }
+  .imgbox{
+    width: 150px; height: 150px;
+    bottom: 0;
+    padding-top: 10%;
+  }
+  .mainUp{
+    display: none;
+  }
 }
 
 /* 어바웃 */
@@ -342,7 +406,55 @@ body{
 
 }
 
+@media(max-width:414px){
+  .aboutText span{
+    font-size: 1.5rem !important;
+  }
+  .about1{
+    position: relative;
+    transform: translate(30px, 50px) rotate(-1deg);
+    width: 250px;
+    height: 150px;
+  }
+  .about2{
+    position: relative;
+    transform: translate(60px, 100px) rotate(2deg);
+    width: 270px;
+    height: 1300px;
+  }
+  .profileBox strong {
+    font-size: 16px;
+  }
+  .profileBox p, .profileBox span{
+    font-size: 12px;
+    padding: 0;
+  }
+}
 
+@media(max-width:900px){
+  .aboutText span{
+    font-size: 3rem !important;
+  }
+  .about1{
+    position: relative;
+    transform: translate(100px, 100px) rotate(-1deg);
+    width: 500px;
+    height: 300px;
+  }
+  .about2{
+    position: relative;
+    transform: translate(100px, 140px) rotate(2deg);
+    width: 450px;
+    height: 250px;
+  }
+  .profileBox strong {
+    font-size: 18px;
+  }
+  .profileBox p, .profileBox span{
+    font-size: 16px;
+    padding: 0;
+  }
+}
 
 /* 스킬 */
 .bgText {
@@ -366,7 +478,6 @@ body{
   flex-direction: column;
   justify-content: center;
 }
-
 .firstLine {
   .skillbox{
     div{
@@ -376,10 +487,8 @@ body{
       position: absolute;
       margin-left: 180px;
     }
-
   } 
 }
-
 .secondLine{
   .skillbox{
     div{
@@ -391,6 +500,37 @@ body{
     }
   }
 } 
+
+@media(max-width:414px){
+  #skills .bgText span{
+    font-size: 5rem !important;
+  }
+  .skillArea {
+    transform: translateY(20%);
+  }
+  .textBox{
+    width: 80px; height: 80px;
+    border-radius: 50%;
+  }
+  .textBox strong{
+    font-size: 12px;
+  }
+  .skillbox div span{
+    font-size: 12px;
+  }
+  .firstLine .skillbox div {
+    margin: 0 2px;
+  }
+  .secondLine .skillbox div {
+    margin: 0 3px;
+  }
+  .firstLine .skillbox span {
+    margin-left: 50px;
+  }
+  .secondLine .skillbox span {
+    margin-left: 50px;
+  }
+}
 
 /* 포트폴리오 */
 #portfolio{
@@ -518,19 +658,52 @@ body{
   }
 }
 
+// @media(max-width:1700px){
+//   #keyword .keywordText span{
+//     font-size: 10rem !important;
+//   }
+// }
+
+// @media(max-width:1024px){
+//   #keyword .keywordText span{
+//     font-size: 8rem !important;
+//   }
+// }
+
+@media(max-width:1700px){
+  body{
+    font-size: 16px !important;
+  }
+}
+
+@media(max-width:1024px){
+  body{
+    font-size: 14px !important;
+  }
+}
+
 /* 스와이퍼 슬라이드*/
 .swiperPage{
   height: 100vh; width: 100vw;
 }
 
 .btn{
-  background-color: var(--color-lightGreen);
-  width: 10px;
+  // background-color: var(--color-lightGreen);
+  // width: 10px;
 }
 
+.swiper-slide{
+  background-color: white;
+}
 
-.btn:hover, .btn.activeBtn{
-  background-color: var(--color-highlightYellow);
+// .btn.activeBtn{
+//   background-color: var(--color-highlightYellow);
+// }
+
+.btn > * {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
@@ -613,3 +786,4 @@ textarea:focus, input:focus{
     ;
   }
 }
+

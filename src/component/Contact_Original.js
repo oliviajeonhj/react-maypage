@@ -1,4 +1,4 @@
-import { useForm } from "react-hook-form";
+import React from 'react';
 import contactdb from "../json/db.json"
 
 function Contact(props) {

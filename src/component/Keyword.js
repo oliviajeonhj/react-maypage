@@ -2,7 +2,7 @@ import keywordDB from "../json/db.json"
 
 function Keyword(props) {
   return (
-    <div id="keyword">
+    <div id="keyword" className="abs">
       <div className="mockupBox d-flex">
         {
           keywordDB.keywordJson.map( (item, index) => {

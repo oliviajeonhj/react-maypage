@@ -1,7 +1,7 @@
 
 function Skill(props) {
   return (
-  <div id="skills" className="hjContainer">
+  <div id="skills" className="">
     <div className="bgText flexCenter">
       <span>SKILLS</span>
     </div>
