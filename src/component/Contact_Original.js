@@ -26,7 +26,7 @@ function Contact(props) {
       {
         contactdb.contactJson.map( (item,index) => {
           return(
-            <li><a href='#none'>{item.sns}</a></li>
+            <li key={'contact' + index}><a href='#none'>{item.sns}</a></li>
           )
         })
       }

@@ -32,7 +32,7 @@ function Ptf(props) {
             const ptfcls3 = item.pftTextboxcls.join(" ")
             return(
             <div>
-              <div className={ptfcls2}>
+              <div key={'ptf' + index} className={ptfcls2}>
                 <img src={`${process.env.PUBLIC_URL}/img/ptf/${item.ptfImg}`} alt="아이캠퍼" />
               </div>
               <div className={ptfcls3}>
@@ -53,7 +53,7 @@ function Ptf(props) {
           const ptfcls3 = item.pftTextboxcls.join(" ")
           return(
           <div>
-            <div className={ptfcls2}>
+            <div key={'ptf' + index} className={ptfcls2}>
               <img src={`${process.env.PUBLIC_URL}/img/ptf/${item.ptfImg}`} alt="아이캠퍼" />
             </div>
             <div className={ptfcls3}>

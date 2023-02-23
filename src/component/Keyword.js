@@ -7,7 +7,7 @@ function Keyword(props) {
         {
           keywordDB.keywordJson.map( (item, index) => {
             return(
-              <div className={item.keyCls}>
+              <div key={'keyword' + index} className={item.keyCls}>
                 <span className={item.spancls}>{item.keyword}</span>
                 <div className={item.piccls}></div>
               </div>

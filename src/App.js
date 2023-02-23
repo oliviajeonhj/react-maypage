@@ -1,42 +1,36 @@
-
-import Slides from './component/Slides';
+import { useEffect, useState } from 'react';
+import PCver from './component/PCver';
+import Mobilever from './component/Mobilever';
 
 function App() {
+  const [resize, setResize] = useState(null);
+  
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setResize(window.innerWidth);
+    });
+  
+    const time = setTimeout(() => {
+      console.log(window.innerWidth);
+      setResize(window.innerWidth);
+    }, 0.0001);
+  
+    return () => {
+      window.removeEventListener("resize", () => {
+        setResize(window.innerWidth);
+      });
+  
+      clearTimeout(time);
+    };
+  }, []);
+
   return (
     <div className="App">
-      <Slides nm={[ 
-           {
+      {
+        resize >= 768
+        ? <PCver /> : <Mobilever/>
+      }
 
-            cls : "text-white",
-            title : "Home"
-           },
-           {
-
-            cls : "cateYellow cateBtn1 animate__bounceInDown",
-            title : "About"
-           },
-           {
-
-            cls : "cateGreen cateBtn2 animate__bounceInDown",
-            title : "Skills"
-           },
-           {
-
-            cls : "cateYellow cateBtn3 animate__bounceInDown",
-            title : "Portfolio"
-           },
-           {
-
-            cls : "cateGreen cateBtn4 animate__bounceInDown",
-            title : "Keyword"
-           },
-           {
-
-            cls : "cateYellow cateBtn5 animate__animated animate__bounceInDown",
-            title : "Contact"
-           }
-             
-              ]}  />
     </div>
   );
 }

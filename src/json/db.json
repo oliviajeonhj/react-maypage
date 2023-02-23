@@ -32,6 +32,38 @@
       "href" : "#none"
     }
   ],
+  "mobileMain" : [
+    {
+      "mbli" : ["navi", "flexCenter"],
+      "mbdiv" : ["naviYellow", "w-100", "h-100"],
+      "mbbtnTitle" : "About",
+      "href" : "#none"
+    },
+    {
+      "mbli" : ["navi", "flexCenter"],
+      "mbdiv" : ["naviGreen", "w-100", "h-100"],
+      "mbbtnTitle" : "Skills",
+      "href" : "#none"
+    },
+    {
+      "mbli" : ["navi", "flexCenter"],
+      "mbdiv" : ["naviYellow", "w-100", "h-100"],
+      "mbbtnTitle" : "Portfolio",
+      "href" : "#none"
+    },
+    {
+      "mbli" : ["navi", "flexCenter"],
+      "mbdiv" : ["naviGreen", "w-100", "h-100"],
+      "mbbtnTitle" : "Keyword",
+      "href" : "#none"
+    },
+    {
+      "mbli" : ["navi", "flexCenter"],
+      "mbdiv" : ["naviYellow", "w-100", "h-100"],
+      "mbbtnTitle" : "Contact",
+      "href" : "#none"
+    }
+  ],
   "aboutJson" : [{
     
     }],
@@ -108,31 +140,31 @@
   ],
   "contactJson" : [{
     "sns" : "Kakao",
-    "href" : "",
+    "href" : "#none",
     "tar" : "_blank"
     },
     {
     "sns" : "Email",
-    "href" : "",
+    "href" : "#none",
     "tar" : "_blank"
     },
     {
     "sns" : "Git",
-    "href" : "",
+    "href" : "#none",
     "tar" : "_blank"
     },
     {
     "sns" : "Notion",
-    "href" : "",
+    "href" : "#none",
     "tar" : "_blank"
     },
     {
     "sns" : "Phone",
-    "href" : "",
+    "href" : "#none",
     "tar" : "_blank"
     },
     {
-    "sns" : "경기도 성남시 / 용인시"
+    "sns" : "경기도 성남시"
     }
   ]
 
